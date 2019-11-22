@@ -22,6 +22,10 @@ time_step = None
 """Шаг по времени при моделировании.
 Тип: float"""
 
+time_speed = None
+space = None
+start_button = None
+
 space_objects = []
 """Список космических объектов."""
 
@@ -123,7 +127,7 @@ def main():
     frame = tkinter.Frame(root)
     frame.pack(side=tkinter.BOTTOM)
 
-    start_button = tkinter.Button(frame, text="Start", command=start_execution, width=6)
+    start_button = tkinter.Button(frame, text="Start", command=start_execution, width=10)
     start_button.pack(side=tkinter.LEFT)
 
     time_step = tkinter.DoubleVar()
